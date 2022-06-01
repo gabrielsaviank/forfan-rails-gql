@@ -16,7 +16,7 @@ const GET_USERS = gql`
  }
 `;
 
-const Users = ({ selectUser }: { selectUser: () => { this: any, user: string } }) => {
+const Users = ({ selectUser }: {selectUser: any}) => {
     const { loading, error, data } = useQuery(GET_USERS)
     if (loading) return 'Loading...'
     if (error) return `Error ${error.message}`;
