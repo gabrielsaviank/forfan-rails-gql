@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an App using Rails, GraphQL and React
 
-Things you may want to cover:
+## Compiling the Project
 
-* Ruby version
+* Make sure you have the Ruby ```2.7.3``` and Rails ```6.1.4``` for more info check the 
+```Gemfile```
 
-* System dependencies
+* Following that run ```bundle install``` in the main directory.
 
-* Configuration
+* Navigate to the ```./frontend``` directory and make sure you have ```yarn``` 
+installed.
 
-* Database creation
+* Run ```tsc --init```
 
-* Database initialization
+* Run ```yarn install``` or ```npm i```, if you run into some problems use ```npm i --force```
 
-* How to run the test suite
+* Compile the project using ```yarn start``` it'll show that the port ````3000```` is already in
+use, just press ```yes``` and then will be moved to the port ```3001```.
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+### Screenshots
 
-* ...
+
+### Important Libraries 
+
+* GraphQL
+* Apollo
+* Tailwind 
+* Faker 
+* Typescript
