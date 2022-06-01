@@ -14,7 +14,7 @@ class App extends React.Component {
     };
 
     render () {
-        // @ts-ignore
+        // FIX ME
         return (
             <div className="container mx-auto px-4">
                 {this.state.selectedUser ?
