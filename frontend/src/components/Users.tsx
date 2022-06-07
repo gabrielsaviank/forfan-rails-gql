@@ -16,14 +16,18 @@ const GET_USERS = gql`
  }
 `;
 
-const Users = ({ selectUser }: {selectUser: any}) => {
+const Users = ({ selectUser }: any) => {
     const { loading, error, data } = useQuery(GET_USERS)
-    if (loading) return 'Loading...'
-    if (error) return `Error ${error.message}`;
+    // if (loading) return 'Loading...'
+    // if (error) return `Error ${error.message}`;
 
     return (
         <div className="flex flex-wrap items-center pb-16">
-            {data.users.map((user: { id: string, name:string, email: string, postCount: number }) => {
+            {data.users.map((user: {
+                id: string,
+                name:string,
+                email: string,
+                postCount: number }) => {
                 return(
                     <div
                         key={user.id}
@@ -38,5 +42,22 @@ const Users = ({ selectUser }: {selectUser: any}) => {
         </div>
     );
 };
+
+
+//
+// const Users = ({ selectUser }: any) => {
+//     const { loading, error, data }: any = useQuery(GET_USERS);
+//
+//     if (loading) {
+//         return('Loading')
+//     }
+//
+//     // if (error) return `Error ${error.message}`;
+//     return(
+//         <div className="flex flex-wrap items-center pb-16">
+//             <h1>MUH DIKK</h1>
+//         </div>
+//     )
+// }
 
 export default Users;

@@ -16,16 +16,20 @@ const GET_USER = gql`
   } 
 `;
 
-const User = ({ user, selectUser }: {user: any, selectUser: any}) => {
+const User = ({ user, selectUser }: {
+        user: { id: string, email: string, name: string, postCount: number },
+        selectUser: any }) => {
     const { loading, error, data } = useQuery(GET_USER, {
        variables: { id: user.id }
     });
 
-    if(loading) return "Loading...";
-    if(error) return `Error ${error.message}`;
+    console.log(data)
+
+    // if(loading) return "Loading...";
+    // if(error) return `Error ${error.message}`;
 
     return (
-        <React.Fragment>
+        <>
             <div className="flex flex-wrap my-4">
                 <button
                     className="bg-gray-200 hove:bg-gray-499 text-gray-900 font-bold py-2 px-4 rounded"
@@ -44,7 +48,7 @@ const User = ({ user, selectUser }: {user: any, selectUser: any}) => {
                     <Posts posts={data.user.posts} user={user}/>
                 </div>
             </div>
-        </React.Fragment>
+        </>
     );
 };
 
