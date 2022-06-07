@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Posts = ({ posts, user }: {posts: any, user: any}) => {
+const Posts = ({ posts, user }: { posts: any, user: { id: string,  name: string }}) => {
     return(
         <>
             <div className="lg:pl-10">
