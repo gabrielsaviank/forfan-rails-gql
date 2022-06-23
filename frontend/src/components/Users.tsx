@@ -43,21 +43,4 @@ const Users = ({ selectUser }: any) => {
     );
 };
 
-
-//
-// const Users = ({ selectUser }: any) => {
-//     const { loading, error, data }: any = useQuery(GET_USERS);
-//
-//     if (loading) {
-//         return('Loading')
-//     }
-//
-//     // if (error) return `Error ${error.message}`;
-//     return(
-//         <div className="flex flex-wrap items-center pb-16">
-//             <h1>MUH DIKK</h1>
-//         </div>
-//     )
-// }
-
 export default Users;
