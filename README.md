@@ -14,7 +14,8 @@ installed.
 
 * Run ```tsc --init```
 
-* Run ```yarn install``` or ```npm i```, if you run into some problems use ```npm i --force```
+* Run ```yarn install``` if yarn fails use ```npm i``` and if you run into some problems use ```npm i --force```
+It'll take a while but everything will be okay.
 
 * Compile the project using ```yarn start``` it'll show that the port ````3000```` is already in
 use, just press ```yes``` and then will be moved to the port ```3001```.
