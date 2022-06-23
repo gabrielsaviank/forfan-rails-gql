@@ -20,7 +20,7 @@ const Users = ({ selectUser }: any) => {
     const { loading, error, data } = useQuery(GET_USERS)
     // if (loading) return 'Loading...'
     // if (error) return `Error ${error.message}`;
-
+    console.log(GET_USERS)
     return (
         <div className="flex flex-wrap items-center pb-16">
             {data.users.map((user: {
