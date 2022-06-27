@@ -43,7 +43,7 @@ const Users = ({ selectUser }: any) => {
     // if (error) return `Error ${error.message}`;
     return (
         <div className="flex flex-wrap items-center pb-16">
-            <h1 className="text-5xl font-bold mt-0 mb-6">Users</h1>
+            <h1 className="text-5xl font-bold mt-0 mb-6">Benutzer</h1>
             {userData}
         </div>
     );
