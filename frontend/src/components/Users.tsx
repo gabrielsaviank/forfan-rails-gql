@@ -3,7 +3,7 @@ import { useQuery } from "react-apollo";
 import { gql } from "apollo-boost";
 
 import UserAvatar from './UserAvatar';
-// import CreateUser from './createUser';
+import CreateUser from './CreateUser';
 
 const GET_USERS = gql`
  {
